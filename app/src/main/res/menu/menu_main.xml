@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_add_appt"
+        android:icon="@drawable/add"
+        android:title="New Appt"
+        app:showAsAction="ifRoom|withText"
+        />
+
+    <item
+        android:id="@+id/menu_clear_db"
+        android:orderInCategory="100"
+        android:title="Clear Schedule"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/menu_add_candida"
+        android:orderInCategory="200"
+        android:title="Add Candida Schedule"
+        app:showAsAction="never"
+        />
+
+</menu>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Sanctuary Schedule</string>
+    <string name="add_time_label">Enter time</string>
+    <string name="add_time_hint">Enter time</string>
+    <string name="add_title_hint">Enter Title</string>
+    <string name="add_button_text">Add Record</string>
+    <string name="delete_appointment">Delete Appointment</string>
+    <string name="add_image_hint">Choose Image: </string>
+    <string name="add_appointment">ADD APPOINTMENT</string>
+    <string name="appointment_header">Appointment Details</string>
+
+    <string-array name="images">
+        <item>colonic</item>
+        <item>cucumber</item>
+        <item>herbs</item>
+        <item>massage</item>
+        <item>paudarco</item>
+        <item>probiotic</item>
+        <item>psyllium</item>
+        <item>services</item>
+        <item>veggiebroth</item>
+    </string-array>
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_detail"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:maxHeight="?attr/actionBarSize"
+        android:background="@drawable/ocean"
+        app:titleTextColor="@color/colorWhite"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/appointment_header"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:padding="16dp"
+        style="?android:listSeparatorTextViewStyle"
+        />
+
+    <ImageView
+        android:id="@+id/display_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/label_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Record ID: "
+            android:layout_margin="8dp"
+            android:textSize="24sp"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/display_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textSize="24sp"
+            android:layout_toRightOf="@id/label_id"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/label_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time: "
+            android:layout_margin="8dp"
+            android:textSize="24sp"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/display_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textSize="24sp"
+            android:layout_toRightOf="@+id/label_time"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/label_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title: "
+            android:layout_margin="8dp"
+            android:textSize="24sp"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/display_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textSize="24sp"
+            android:layout_toRightOf="@id/label_title"
+            />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/delete_appt_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text= "@string/delete_appointment"
+        />
+
+</LinearLayout>

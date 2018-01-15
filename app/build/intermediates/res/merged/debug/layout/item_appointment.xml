@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <ImageView
+        android:id="@+id/appointment_item_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:padding="4dp"
+        android:layout_marginLeft="8dp"
+        />
+
+    <TextView
+        android:id="@+id/appointment_item_time"
+        tools:text="Time"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/appointment_item_image"
+        android:layout_centerVertical="true"
+        android:padding="4dp"/>
+
+    <TextView
+        android:id="@+id/appointment_item_title"
+        tools:text="Title"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/appointment_item_time"
+        android:layout_toEndOf="@id/appointment_item_time"
+        android:layout_centerVertical="true"
+        android:padding="4dp"/>
+
+    <TextView
+        android:id="@+id/appointment_item_id"
+        tools:text="id"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/appointment_item_title"
+        android:layout_centerVertical="true"
+        android:padding="4dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appointment_item_image"
+        style="?android:listSeparatorTextViewStyle"
+        />
+
+    <CheckBox
+        android:id="@+id/appointment_completed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="8dp"
+        android:buttonTint="@color/colorPrimaryDark"
+        />
+
+</RelativeLayout>
